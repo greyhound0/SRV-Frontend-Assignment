@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. MARQUEE CLONING
   const initMarquee = () => {
     const track = document.querySelector(".marquee__track");
     if (track) {
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // 2. FEATURES SLIDER
   const initFeaturesSlider = () => {
     const track = document.querySelector(".features-slider-container");
     const nextBtn = document.querySelector(".feat-next");
@@ -25,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // 3. FORM VALIDATION
   const form = document.querySelector(".enquire-form");
   if (form) {
     const phoneInput = form.querySelector("#phone");
