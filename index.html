@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premier Schools Exhibition - Discover top schools in Gurugram."
+    />
     <title>Premier Schools Exhibition</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -11,17 +15,16 @@
     />
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- <a href="#main-content" class="skip-link">Skip to main content</a> -->
 
     <header class="header">
       <nav class="nav container">
         <div class="nav__logo">
-          <img
-            src="https://placehold.co/180x60/FFF/191970?text=Premier+Schools"
-            alt="PSE Logo"
-          />
+          <img src="assets/pse-logo.png" alt="PSE Logo" />
         </div>
-        <button class="btn btn--header">REGISTER NOW</button>
+        <button class="btn btn--header" aria-label="Register Now">
+          REGISTER NOW
+        </button>
       </nav>
     </header>
 
@@ -44,7 +47,7 @@
             </div>
           </div>
 
-          <div class="hero__visual">
+          <div class="hero__visual" aria-hidden="true">
             <div class="hero-marquee-wrapper">
               <div class="marquee-col col-up">
                 <div class="marquee-group">
@@ -160,14 +163,14 @@
           </div>
 
           <div class="hero__form-wrapper">
-            <form class="enquire-form" novalidate>
+            <form class="enquire-form" novalidate aria-label="Enquiry Form">
               <h3>Enquire Now</h3>
               <div class="form-group">
-                <label>Parent's Name</label>
+                <label for="name">Parent's Name</label>
                 <input type="text" id="name" required autocomplete="name" />
               </div>
               <div class="form-group">
-                <label>Phone number</label>
+                <label for="phone">Phone number</label>
                 <input
                   type="tel"
                   id="phone"
@@ -177,89 +180,63 @@
                 />
               </div>
               <div class="form-group">
-                <label>Which grade are you looking for?</label>
-                <select required>
-                  <option value=""></option>
+                <label for="grade">Which grade are you looking for?</label>
+                <select id="grade" required>
+                  <option value="">Select Grade</option>
                   <option value="nursery">Nursery</option>
                   <option value="primary">Primary</option>
                   <option value="secondary">Secondary</option>
                 </select>
               </div>
               <button type="submit" class="btn btn--submit">
-                SUBMIT <i class="fas fa-paper-plane"></i>
+                SUBMIT <i class="fas fa-paper-plane" aria-hidden="true"></i>
               </button>
             </form>
           </div>
         </div>
-
-        <div class="hero__bg-circle"></div>
       </section>
 
-      <section class="stats-section">
+      <section class="stats-section" aria-label="Statistics">
         <div class="container stats-grid">
           <div class="stat-item">
-            <i class="fas fa-shield-alt stat-icon"></i>
+            <i class="fas fa-shield-alt stat-icon" aria-hidden="true"></i>
             <h3>
               Trusted by <br />
               <strong>1 Million+</strong><br />Parents
             </h3>
           </div>
           <div class="stat-item">
-            <i class="fas fa-history stat-icon"></i>
+            <i class="fas fa-history stat-icon" aria-hidden="true"></i>
             <h3><strong>22+</strong><br />Years<br />of Legacy</h3>
           </div>
           <div class="stat-item">
-            <i class="fas fa-school stat-icon"></i>
+            <i class="fas fa-school stat-icon" aria-hidden="true"></i>
             <h3><strong>500+</strong><br />Participating<br />Schools</h3>
           </div>
           <div class="stat-item">
-            <i class="fas fa-globe stat-icon"></i>
+            <i class="fas fa-globe stat-icon" aria-hidden="true"></i>
             <h3><strong>17 Cities</strong><br />Across the<br />Globe</h3>
           </div>
         </div>
       </section>
 
-      <section class="school-marquee">
+      <section class="school-marquee" aria-label="Participating Schools">
         <h2 class="section-title text-center">Participating Schools</h2>
         <div class="marquee__track-wrapper">
-          <div class="marquee__track">
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+1"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+2"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+3"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+4"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+5"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+1"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+2"
-              class="marquee__logo"
-            />
-            <img
-              src="https://placehold.co/150x80/FFF/333?text=School+3"
-              class="marquee__logo"
-            />
+          <div class="marquee__track" aria-hidden="true">
+            <img src="assets/school-1.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-2.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-3.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-4.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-5.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-1.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-2.png" class="marquee__logo" alt="School" />
+            <img src="assets/school-3.png" class="marquee__logo" alt="School" />
           </div>
         </div>
       </section>
 
-      <section class="choose-school">
+      <section class="choose-school" aria-label="Categories">
         <div class="container">
           <h2 class="section-title text-center">
             Choose the School That Fits You Best
@@ -267,69 +244,45 @@
           <div class="school-grid">
             <article class="school-card">
               <div class="card-img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=400"
-                  alt="Pre-Schools"
-                />
+                <img src="assets/card-pre-school.png" alt="Pre-Schools" />
               </div>
               <div class="school-card__content">
-                <h3>Pre-Schools & Early Learning Centres</h3>
-                <p>
-                  Nurturing foundational skills for toddlers and pre-primary
-                  children.
-                </p>
+                <h3>Pre-Schools</h3>
+                <p>Nurturing foundational skills.</p>
               </div>
             </article>
             <article class="school-card">
               <div class="card-img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=400"
-                  alt="CBSE"
-                />
+                <img src="assets/card-CBSE.png" alt="CBSE" />
               </div>
               <div class="school-card__content">
-                <h3>K-12 CBSE Day Schools</h3>
-                <p>
-                  Reputed schools offering complete schooling from Kindergarten
-                  to Grade 12.
-                </p>
+                <h3>K-12 CBSE</h3>
+                <p>Reputed schools offering complete schooling.</p>
               </div>
             </article>
             <article class="school-card">
               <div class="card-img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1577896335477-2858506f48db?q=80&w=400"
-                  alt="Heritage"
-                />
+                <img src="assets/card-heritage.png" alt="Heritage" />
               </div>
               <div class="school-card__content">
-                <h3>Heritage to New-Age Schools</h3>
-                <p>
-                  Time-tested schools to innovative pedagogy, tech enabled,
-                  future ready schools.
-                </p>
+                <h3>Heritage Schools</h3>
+                <p>Time-tested innovative pedagogy.</p>
               </div>
             </article>
             <article class="school-card">
               <div class="card-img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=400"
-                  alt="International"
-                />
+                <img src="assets/card-international.png" alt="International" />
               </div>
               <div class="school-card__content">
-                <h3>International Curriculum Schools</h3>
-                <p>
-                  Offering IB, Cambridge, Finnish and other global curricula
-                  with a global learning environment.
-                </p>
+                <h3>International</h3>
+                <p>IB, Cambridge, and global curricula.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="cta-section">
+      <section class="cta-section" aria-label="CTA">
         <div class="container cta-layout">
           <div class="cta-text">
             <span class="cta-subtitle"
@@ -343,71 +296,60 @@
             <button class="btn btn--white-fill">PRE SCHEDULE NOW</button>
           </div>
           <div class="cta-image">
-            <img
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=500"
-              alt="Parents Discussion"
-            />
+            <img src="assets/parents-discussion.png" alt="Parents Discussion" />
           </div>
         </div>
       </section>
 
-      <section class="features-section">
+      <section class="features-section" aria-label="Features">
         <div class="container">
           <h2 class="section-title text-center text-white">
             What Makes This Exhibition a Must-Visit
           </h2>
-
           <div class="features-slider-container">
             <div class="features-grid" id="featuresTrack">
               <div class="feature-item">
                 <div class="feature-icon-box">
-                  <i class="fas fa-handshake"></i>
+                  <i class="fas fa-handshake" aria-hidden="true"></i>
                 </div>
-                <h3>Interact Directly with School Heads</h3>
+                <h3>Interact Directly</h3>
                 <p>Get answers straight from the experts.</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon-box">
-                  <i class="fas fa-exchange-alt"></i>
+                  <i class="fas fa-exchange-alt" aria-hidden="true"></i>
                 </div>
-                <h3>Compare Curriculum & Pedagogy</h3>
-                <p>
-                  Understand the differences between CBSE, ICSE, IB, Cambridge,
-                  etc.
-                </p>
+                <h3>Compare Curriculum</h3>
+                <p>Understand the differences in boards.</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon-box">
-                  <i class="fas fa-percent"></i>
+                  <i class="fas fa-percent" aria-hidden="true"></i>
                 </div>
-                <h3>Get Exclusive Fee Structures & Offers</h3>
-                <p>Access transparent information and avail offers.</p>
+                <h3>Exclusive Fees</h3>
+                <p>Access transparent information.</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon-box">
-                  <i class="fas fa-search-plus"></i>
+                  <i class="fas fa-search-plus" aria-hidden="true"></i>
                 </div>
-                <h3>Explore Schools Offerings</h3>
-                <p>
-                  Preview infrastructure, co-curricular, teaching methodology
-                  and culture.
-                </p>
+                <h3>Explore Offerings</h3>
+                <p>Preview infrastructure and culture.</p>
               </div>
               <div class="feature-item">
                 <div class="feature-icon-box">
-                  <i class="fas fa-user-graduate"></i>
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i>
                 </div>
-                <h3>On-Spot Counseling</h3>
-                <p>Get career guidance from expert counselors.</p>
+                <h3>Counseling</h3>
+                <p>Get career guidance.</p>
               </div>
             </div>
           </div>
-
           <div class="features-nav">
-            <button class="feat-btn feat-prev">
+            <button class="feat-btn feat-prev" aria-label="Previous Feature">
               <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="feat-btn feat-next">
+            <button class="feat-btn feat-next" aria-label="Next Feature">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -424,17 +366,11 @@
           </div>
           <div class="footer-col">
             <h4>Corporate Office:</h4>
-            <p>
-              Suite B-5, Ballygunge Park Tower,<br />67B Ballygunge Circular
-              Road,<br />Kolkata - 700019
-            </p>
+            <p>Suite B-5, Ballygunge Park Tower,<br />Kolkata - 700019</p>
           </div>
           <div class="footer-col">
             <h4>Ahmedabad Office:</h4>
-            <p>
-              12/AA, Swastik Chambers,<br />Near CU Shah College,<br />Ahmedabad
-              - 380009
-            </p>
+            <p>12/AA, Swastik Chambers,<br />Ahmedabad - 380009</p>
           </div>
           <div class="footer-col">
             <h4>Call us on:</h4>
@@ -446,9 +382,9 @@
           <div class="footer-col social-col">
             <h4>Follow us on</h4>
             <div class="social-icons">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-facebook" aria-label="Facebook"></i>
+              <i class="fab fa-instagram" aria-label="Instagram"></i>
+              <i class="fab fa-youtube" aria-label="YouTube"></i>
             </div>
           </div>
         </div>
